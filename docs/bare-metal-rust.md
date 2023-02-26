@@ -1,7 +1,7 @@
 # Bare Metal Rust (on ESP32C3 via ESP32-C3-DevKit-RUST-1)
 
 ## Project / Module Structure
-Need to study up and develop a plan.  See [Project Structure](project_structure.md)
+Need to study up and develop a plan.  See [Project Architecture](bare-metal-rust-architecture.md)
 
 ## Dan's ESP32-C3-DevKit-RUST-1 boards  
 |Board|Setup|MAC Addr|Static_IP|Wifi Name|Battery|Status|
