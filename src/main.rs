@@ -118,7 +118,15 @@ fn main() -> ! {
         };
         if orient != prior_orient {
             prior_orient = orient;
-            println!("{:?}", orient);
+            match orient {
+                FaceUp        => println!("{:?}", orient.bright_purple()),
+                FaceDown      => println!("{:?}", orient.green()),
+                PortraitUp    => println!("{:?}", orient.blue()),
+                PortraitDown  => println!("{:?}", orient.yellow()),
+                LandscapeUp   => println!("{:?}", orient.bright_yellow()),
+                LandscapeDown => println!("{:?}", orient.bright_cyan()),
+                Unknown       => println!("{:?}", orient.black()),
+            }
             let orient_color = directional_color(orient);
             led.write(brightness(gamma(core::iter::once(orient_color)), 50)).unwrap();
         }
