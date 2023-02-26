@@ -167,10 +167,10 @@ fn c2f(temp_c: f32) -> f32 {
 fn directional_color(dir: Orientation) -> RGB8 {
     match dir {
         Unknown => colors::BLACK,
-        FaceUp => RGB8::new(0x7F,0x0F,0xCF),
+        FaceUp => RGB8::new(0x9F,0x1F,0xDF),
         FaceDown => RGB8::new(0x0,0x6F,0x1F),
         PortraitUp => colors::BLUE,
-        PortraitDown => RGB8::new(0x3F,0x5F,0xCF),
+        PortraitDown => RGB8::new(0x8F,0x8F,0x1F),
         LandscapeUp => RGB8 { r: 0x90, g: 0xB0, b: 0x00 }, // RGB8::new(0x3F,0x3F,0x3F),
         LandscapeDown => RGB8::new(0x6F,0x9F,0xC0),
     }
